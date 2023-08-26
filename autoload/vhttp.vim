@@ -1,8 +1,8 @@
 let g:vhttp_config = {
-    \ 'method': 'GET',
-    \ 'url': '',
-    \ 'body': '',
-    \ }
+      \ 'method': 'GET',
+      \ 'url': '',
+      \ 'body': '',
+      \ }
 
 let s:VHTTP_REQUEST_BODY_ALLOWED = 1
 let s:VHTTP_REQUEST_BODY_NOT_ALLOWED = 0
@@ -17,9 +17,9 @@ function! vhttp#VHttp()
   let url = vhttp#input#PromptURL()
   for supported_method in vhttp#http#SupportedMethods()
     if method == supported_method
-        let functionName = 'vhttp#VHttp' .. supported_method
-        call call(functionName, [ url ])
-        return
+      let functionName = 'vhttp#VHttp' .. supported_method
+      call call(functionName, [ url ])
+      return
     endif
   endfor
 endfunction
@@ -63,7 +63,7 @@ function! s:ConfigureVHttp(method, url, bodyAllowed)
       call vhttp#output#OutputErrorOut(optionalBody[1])
       return
     endif
-  
+
     let g:vhttp_config.body = optionalBody[1]
   endif
 endfunction
@@ -85,10 +85,10 @@ function! s:ExecuteRequest()
   endif
 
   let curl = printf('curl --fail --silent --show-error --verbose --user-agent "VHTTP/%s" -X %s -d %s %s',
-            \ g:vhttp_loaded_version,
-            \ g:vhttp_config.method,
-            \ shellescape(g:vhttp_config.body),
-            \ shellescape(g:vhttp_config.url))
+	\ g:vhttp_loaded_version,
+	\ g:vhttp_config.method,
+	\ shellescape(g:vhttp_config.body),
+	\ shellescape(g:vhttp_config.url))
 
   let result = system(curl)
   if v:shell_error
