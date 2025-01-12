@@ -1,7 +1,6 @@
 # vhttp-vim
 
-vhttp-vim is a Vim plugin written in Vim Script that provides HTTP client functionality directly within Vim.  
-This plugin allows users to execute HTTP requests and interact with APIs without leaving the Vim editor.
+vhttp-vim is a lightweight Vim plugin that brings minimalistic simple HTTP client functionality to your editor. 
 
 ## Features
 
@@ -12,31 +11,36 @@ This plugin allows users to execute HTTP requests and interact with APIs without
 
 ## Installation
 
-1. Add the following line to your `.vimrc`:
+1. Plug vhttp-vim to your `.vimrc`:
 
 ```vim
+call plug#begin('~/.vim/plugged')
+
 Plug 'penev-ff/vhttp-vim'
+
+call plug#end()
 ```
 
 2. Install the plugin using the `:PlugInstall` command.
 
 ## Usage
 
-### Performing a GET request
-
-To perform a GET request, use the `:HttpGet` command followed by the URL:
+### Performing a request
 
 ```vim
-:HttpGet https://api.example.com/data
+:VHTTP
 ```
 
-### Performing a POST request
-
-To perform a POST request, use the `:HttpPost` command followed by the URL and request body:
+### Execute the previous call
 
 ```vim
-:HttpPost https://api.example.com/data {"key": "value"}
+VHTTPLast
 ```
+
+### Shortcut Keybindings
+
+`<c-h>e`: Triggers the main HTTP request function (VHTTP).
+`<c-h>l`: Repeats the last HTTP request (VHTTPLast).
 
 ### Viewing the response
 
@@ -44,4 +48,4 @@ The response will be displayed in a new buffer with syntax highlighting for easi
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. Please look at the [LICENSE](LICENSE) file for details.
