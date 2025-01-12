@@ -18,13 +18,13 @@ call plug#end()
 
 ## Usage
 
-### Performing a request
+### Execute a request
 
 ```vim
 :VHTTP
 ```
 
-### Execute the previous call
+### Execute the previous request
 
 ```vim
 VHTTPLast
