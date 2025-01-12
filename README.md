@@ -38,7 +38,3 @@ call plug#end()
 ### Viewing the response
 
 The response is displayed in a new buffer with syntax highlighting.
-
-## License
-
-This project is licensed under the MIT License. Please look at the [LICENSE](LICENSE) file for details.
