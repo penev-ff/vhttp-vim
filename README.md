@@ -2,13 +2,6 @@
 
 vhttp-vim is a lightweight Vim plugin that brings minimalistic simple HTTP client functionality to your editor. 
 
-## Features
-
-- Perform HTTP GET, POST, PUT, and DELETE requests
-- Customizable headers and request body
-- View response status, headers, and body
-- Syntax highlighting for JSON and other response formats
-
 ## Installation
 
 1. Plug vhttp-vim to your `.vimrc`:
