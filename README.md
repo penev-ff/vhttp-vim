@@ -27,7 +27,7 @@ call plug#end()
 ### Execute the previous request
 
 ```vim
-VHTTPLast
+:VHTTPLast
 ```
 
 ### Shortcut Keybindings
