@@ -1,6 +1,6 @@
 # vhttp-vim
 
-vhttp-vim is a lightweight Vim plugin that brings minimalistic simple HTTP client functionality to your editor. 
+vhttp-vim is a lightweight Vim plugin that brings minimalistic and simple HTTP client functionality to your editor. 
 
 ## Installation
 
