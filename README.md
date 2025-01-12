@@ -39,8 +39,8 @@ VHTTPLast
 
 ### Shortcut Keybindings
 
-`<c-h>e`: Triggers the main HTTP request function (VHTTP).
-`<c-h>l`: Repeats the last HTTP request (VHTTPLast).
+`<c-h>e`: Triggers the main HTTP request function (VHTTP).  
+`<c-h>l`: Repeats the last HTTP request (VHTTPLast).  
 
 ### Viewing the response
 
