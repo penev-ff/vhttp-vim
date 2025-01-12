@@ -35,6 +35,8 @@ call plug#end()
 `<c-h>e`: Triggers the main HTTP request function (VHTTP).  
 `<c-h>l`: Repeats the last HTTP request (VHTTPLast).  
 
-### Viewing the response
+### Preview of the response
 
 The response is displayed in a new buffer with syntax highlighting.
+
+![VHTTP-Usage](https://i.imgur.com/EWT3Vmx.png)
