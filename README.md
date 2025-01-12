@@ -37,7 +37,7 @@ VHTTPLast
 
 ### Viewing the response
 
-The response will be displayed in a new buffer with syntax highlighting for easier readability.
+The response is displayed in a new buffer with syntax highlighting.
 
 ## License
 
